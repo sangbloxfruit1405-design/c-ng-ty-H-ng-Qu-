@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hưng Quế – Vật liệu xây dựng, nội thất, thiết bị điện nước</title>
+  <style>
+    :root {
+      --primary: #1f8a4d;
+      --dark: #1b1b1b;
+      --text: #333;
+      --muted: #6b7280;
+      --bg: #f7f7f7;
+      --white: #fff;
+      --radius: 12px;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family: Arial, sans-serif; background:var(--bg); color:var(--text); }
+    a { text-decoration:none; color:var(--primary); }
+    header {display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:var(--white);border-bottom:1px solid #ddd;position:sticky;top:0;z-index:50;}
+    header .brand {font-weight:bold;color:var(--dark);}
+    nav {display:flex;gap:12px;align-items:center;}
+    nav a {padding:8px 10px;border-radius:8px;color:var(--dark);}
+    nav a.active, nav a:hover {background:#eaf6ef;color:var(--primary);}
+    .header-contact {font-size:14px;color:var(--muted);}
+    .header-contact a {color:var(--dark); margin-left:8px; font-weight:600;}
+    .hero {display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center;padding:32px;background:var(--white);}
+    .hero h1 {margin:0 0 12px;font-size:28px;}
+    .hero p {margin:0 0 16px;color:var(--muted);}
+    .btn {display:inline-block;padding:10px 16px;border-radius:8px;border:1px solid #ccc;background:var(--white);color:var(--dark); margin-right:8px;}
+    .btn.primary {background:var(--primary);color:var(--white);border-color:var(--primary);}
+    .features {display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:24px;}
+    .feature {background:var(--white);padding:16px;border-radius:var(--radius);border:1px solid #ddd;}
+    .cards {display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;}
+    .card {background:var(--white);padding:16px;border-radius:var(--radius);border:1px solid #ddd;}
+    footer {background:var(--white);border-top:1px solid #ddd;padding:16px;text-align:center;color:var(--muted);}
+    .cookie-banner {position:fixed;bottom:16px;left:16px;right:16px;background:var(--dark);color:var(--white);padding:12px;border-radius:var(--radius);display:flex;justify-content:space-between;align-items:center;}
+    section {padding:24px;}
+    h2 {margin-bottom:12px;}
+    @media(max-width:768px){
+      .hero{grid-template-columns:1fr;}
+      header {flex-wrap:wrap;gap:8px;}
+      .header-contact {width:100%; text-align:right; margin-top:6px;}
+      nav {order:3; width:100%; justify-content:flex-start; overflow-x:auto;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Hưng Quế</div>
+
+    <nav>
+      <a href="#home" class="active">Trang chủ</a>
+      <a href="#gioi-thieu">Giới thiệu</a>
+      <a href="#dich-vu">Dịch vụ</a>
+      <a href="#san-pham">Sản phẩm</a>
+      <a href="#lien-he">Liên hệ</a>
+    </nav>
+
+    <div class="header-contact" aria-label="Thông tin liên hệ">
+      <span>Điện thoại:</span>
+      <a href="tel:0914414368">0914414368</a>
+      <span style="margin:0 6px;color:#999;">|</span>
+      <span>Hotline:</span>
+      <a href="tel:0944215456">0944215456</a>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div>
+      <h1>Giải pháp vật liệu & thiết bị cho mọi công trình</h1>
+      <p>Hưng Quế cung cấp vật liệu xây dựng, nội thất, thiết bị điện nước. Đồng hành cùng bạn xây dựng những công trình bền vững.</p>
+      <a class="btn primary" href="#san-pham">Xem sản phẩm</a>
+      <a class="btn" href="#lien-he">Liên hệ ngay</a>
+    </div>
+    <div>
+      <img src="https://via.placeholder.com/500x300" alt="Hình minh họa công trình" style="width:100%;border-radius:8px;"/>
+    </div>
+  </section>
+
+  <section id="gioi-thieu">
+    <h2>Giới thiệu công ty Hưng Quế</h2>
+    <p>Hưng Quế là đơn vị phân phối vật liệu xây dựng, nội thất và thiết bị điện nước. Chúng tôi cung cấp giải pháp toàn diện cho nhà thầu, chủ đầu tư và hộ gia đình.</p>
+    <ul>
+      <li>Chất lượng là ưu tiên hàng đầu</li>
+      <li>Giá trị bền vững cho mọi công trình</li>
+      <li>Dịch vụ tận tâm, giao hàng đúng hẹn</li>
+    </ul>
+  </section>
+
+  <section id="dich-vu">
+    <h2>Dịch vụ</h2>
+    <div class="cards">
+      <div class="card"><h3>Tư vấn vật liệu</h3><p>Gợi ý vật liệu phù hợp theo ngân sách và yêu cầu kỹ thuật.</p></div>
+      <div class="card"><h3>Cung ứng & vận chuyển</h3><p>Giao hàng nhanh, hỗ trợ bốc xếp tại công trình.</p></div>
+      <div class="card"><h3>Lắp đặt thiết bị</h3><p>Lắp đặt điện nước, nội thất, bảo hành chính hãng.</p></div>
+      <div class="card"><h3>Bảo trì</h3><p>Bảo dưỡng định kỳ hệ thống điện nước, thay thế linh kiện.</p></div>
+    </div>
+  </section>
+
+  <section id="san-pham">
+    <h2>Sản phẩm</h2>
+    <div class="cards">
+      <div class="card"><h4>Thép xây dựng</h4><p>Thép cây, thép cuộn – tiêu chuẩn Việt Nhật.</p></div>
+      <div class="card"><h4>Xi măng PCB40</h4><p>Độ bền tốt, giá cạnh tranh.</p></div>
+      <div class="card"><h4>Thiết bị điện nước</h4><p>Dây điện, ống nước, vòi sen, máy bơm.</p></div>
+      <div class="card"><h4>Nội thất</h4><p>Bàn ghế, tủ, thiết bị trang trí.</p></div>
+    </div>
+  </section>
+
+  <section id="lien-he">
+    <h2>Liên hệ</h2>
+    <form onsubmit="return handleSubmit(event)">
+      <label>Họ tên<br><input type="text" required></label><br><br>
+      <label>Điện thoại<br><input type="tel" required></label><br><br>
+      <label>Email<br><input type="email"></label><br><br>
+      <label>Nội dung<br><textarea rows="5" required></textarea></label><br><br>
+      <button class="btn primary" type="submit">Gửi liên hệ</button>
+    </form>
+    <p>Địa chỉ: Yên Sơn, Thanh Hóa</p>
+    <p>Điện thoại: <a href="tel:0914414368">0914414368</a> &nbsp;|&nbsp; Hotline: <a href="tel:0944215456">0944215456</a></p>
+    <p>Email: <a href="mailto:info@hungque.vn">info@hungque.vn</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Hưng Quế – Vật liệu xây dựng, nội thất, thiết bị điện nước.</p>
+  </footer>
+
+  <div class="cookie-banner" id="cookieBanner">
+    <span>Trang web sử dụng cookies để cải thiện trải nghiệm.</span>
+    <button class="btn" onclick="dismissCookie()">Đồng ý</button>
+  </div>
+
+  <script>
+    function dismissCookie(){
+      document.getElementById('cookieBanner').style.display='none';
+      localStorage.setItem('cookieAccepted','1');
+    }
+    (function(){
+      if(localStorage.getItem('cookieAccepted')==='1'){
+        document.getElementById('cookieBanner').style.display='none';
+      }
+    })();
+    function handleSubmit(e){
+      e.preventDefault();
+      alert('Cảm ơn bạn! Thông tin đã được gửi.');
+      return false;
+    }
+  </script>
+</body>
+</html>
